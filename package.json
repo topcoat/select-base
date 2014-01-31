@@ -1,0 +1,46 @@
+{
+  "name": "topcoat-select-base",
+  "version": "0.0.3",
+  "description": "Topcoat select base",
+  "main": "index.html",
+  "style": "src/select.css",
+  "directories": {
+    "test": "test",
+    "lib": "src",
+    "bin": "css"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "prepublish": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/topcoat/select-base.git"
+  },
+  "keywords": [
+    "input",
+    "css",
+    "topcoat",
+    "base",
+    "adobe"
+  ],
+  "author": "Garth Braithwaite (http://garthdb.com/)",
+  "contributors": [
+    "Kristofer Joseph (http://twitter.com/dam)",
+    "Garth Braithwaite (http://garthdb.com/)"
+  ],
+  "license": "Apache",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-jade": "~0.7.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-simple-mocha": "~0.4.0",
+    "grunt-rework": "0.0.6",
+    "grunt-topcoat": "~0.1.3"
+  },
+  "dependencies": {
+    "topcoat-utils": "0.3.0"
+  }
+}
