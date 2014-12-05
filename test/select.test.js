@@ -27,7 +27,7 @@ describe('Topcoat select base', function() {
     it('should output correct reset css', function() {
         var actual = grunt.file.read('css/select.css');
         var expected = grunt.file.read('test/expected/select.css');
-        assert.equal(actual, expected, 'should generate correct css');
+        assert.equal(actual.trim(), expected.trim(), 'should generate correct css');
     });
 
 });
