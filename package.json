@@ -1,6 +1,6 @@
 {
   "name": "topcoat-select-base",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Topcoat select base",
   "main": "index.html",
   "style": "src/select.css",
