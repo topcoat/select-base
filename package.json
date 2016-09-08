@@ -1,21 +1,19 @@
 {
   "name": "topcoat-select-base",
-  "version": "0.0.4",
   "description": "Topcoat select base",
   "main": "index.html",
-  "style": "src/select.css",
+  "style": "src/select-base",
   "directories": {
-    "test": "test",
-    "lib": "src",
-    "bin": "css"
+    "test": "test"
   },
   "scripts": {
-    "test": "grunt test",
-    "prepublish": "grunt"
+    "test": "ava test",
+    "prepublish": "rsn -p './' -o ./css/select-base.css ./test/select-base.fixture.css",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/topcoat/select-base.git"
+    "url": "https://github.com/topcoat/select-base.git"
   },
   "keywords": [
     "input",
@@ -24,23 +22,33 @@
     "base",
     "adobe"
   ],
-  "author": "Garth Braithwaite (http://garthdb.com/)",
+  "author": "Garth Braithwaite <garthdb@gmail.com> (http://garthdb.com)",
   "contributors": [
-    "Kristofer Joseph (http://twitter.com/dam)",
-    "Garth Braithwaite (http://garthdb.com/)"
+    "Kristofer Joseph <kristoferjoseph@gmail.com> (http://kristoferjoseph.com/)"
   ],
-  "license": "Apache",
-  "devDependencies": {
-    "grunt": "0.4.1",
-    "grunt-contrib-watch": "0.4.4",
-    "grunt-contrib-cssmin": "0.6.1",
-    "grunt-contrib-jade": "0.7.0",
-    "grunt-contrib-clean": "0.5.0",
-    "grunt-simple-mocha": "0.4.0",
-    "grunt-rework": "0.0.6",
-    "grunt-topcoat": "0.1.3"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/topcoat/topcoat/issues"
   },
+  "homepage": "http://topcoat.io",
   "dependencies": {
-    "topcoat-utils": "0.3.0"
+    "topcoat-utils": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "ava": "^0.16.0",
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "cz-customizable": "^4.0.0",
+    "mocha": "^3.0.2",
+    "resin": "^1.2.0",
+    "semantic-release": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }

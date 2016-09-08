@@ -1,11 +1,9 @@
-Topcoat Input Base
-==================
+# Topcoat Select Base
 
-This is the base component for Topcoat inputs.
+[![Build Status](https://travis-ci.org/topcoat/select-base.svg?branch=master)](https://travis-ci.org/topcoat/select-base) [![npm version](https://badge.fury.io/js/topcoat-select-base.svg)](https://badge.fury.io/js/topcoat-select-base)
+
+---
+
+This is the base component for Topcoat select.
 It supplies the css resets needed to style an input as well as the lowest level
 component for baseline testing of performance.
-
-[![Build Status](https://travis-ci.org/topcoat/input-base.png?branch=fixes)](https://travis-ci.org/topcoat/input-base)
-
-[![NPM](https://nodei.co/npm/topcoat-input-base.png)](https://nodei.co/npm/topcoat-input-base/)
-
